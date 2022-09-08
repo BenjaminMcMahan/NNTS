@@ -1,0 +1,47 @@
+$fa-font-path: "/webfonts";
+$header-font: "Bebas_Neue", sans-serif;
+#main-header {
+  background-color: #4689bd;
+  color: #fff;
+  background-image: url("/dist/images/beach-2.jpg");
+  background-size: cover;
+  background-position: center;
+  h1 {
+    letter-spacing: 0.6em;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+    color: #ffffff;
+    border-bottom: 2px dashed #d2d2d2;
+  }
+}
+#intro {
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 8%, rgb(230 242 251) 100%);
+}
+.fa-blue {
+  color: #6eb0d9;
+}
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/src/fonts/bebas-neue-v9-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+  url('/src/fonts/bebas-neue-v9-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/src/fonts/bebas-neue-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('/src/fonts/bebas-neue-v9-latin-regular.woff') format('woff'), /* Modern Browsers */
+  url('/src/fonts/bebas-neue-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('/src/fonts/bebas-neue-v9-latin-regular.svg#BebasNeue') format('svg'); /* Legacy iOS */
+}
+.navbar-brand {
+  font-family: $header-font;
+}
+.nav-item {
+  border-bottom: 2px solid;
+}
+.nav-item:hover {
+  border-bottom: 2px solid red;
+}
+@import "~bootstrap/scss/bootstrap";
+@import "./font-awesome/fontawesome.scss";
+@import "./font-awesome/solid.scss";
+@import "./font-awesome/brands.scss";
