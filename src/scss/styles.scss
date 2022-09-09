@@ -1,5 +1,9 @@
+@import "~bootstrap/scss/bootstrap";
 $fa-font-path: "/webfonts";
 $header-font: "Bebas_Neue", sans-serif;
+body {
+  overflow-x:hidden;
+}
 #main-header {
   background-color: #4689bd;
   color: #fff;
@@ -16,6 +20,16 @@ $header-font: "Bebas_Neue", sans-serif;
 #intro {
   background: rgb(255,255,255);
   background: linear-gradient(180deg, rgba(255,255,255,1) 8%, rgb(230 242 251) 100%);
+}
+#services {
+  background-color: #84a0b3;
+}
+@include media-breakpoint-up(sm)  {
+  .card-group {
+    box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.75);
+  }
 }
 .fa-blue {
   color: #6eb0d9;
@@ -41,7 +55,6 @@ $header-font: "Bebas_Neue", sans-serif;
 .nav-item:hover {
   border-bottom: 2px solid red;
 }
-@import "~bootstrap/scss/bootstrap";
 @import "./font-awesome/fontawesome.scss";
 @import "./font-awesome/solid.scss";
 @import "./font-awesome/brands.scss";
